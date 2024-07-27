@@ -1,0 +1,34 @@
+log file: logs/240727-130810.log
+--------------------------------------------------------------------------------
+Config 1 (totally 1 configs)
+No.1 training process of 5
+>>> dataset: restaurant
+>>> output_dir: output
+>>> SRD: 5
+>>> learning_rate: 3e-05
+>>> use_unique_bert: True
+>>> use_bert_spc: False
+>>> local_context_focus: fusion
+>>> num_train_epochs: 1.0
+>>> train_batch_size: 5
+>>> dropout: 0.1
+>>> max_seq_length: 15
+>>> eval_batch_size: 32
+>>> eval_steps: 20
+>>> gradient_accumulation_steps: 1
+>>> config_path: .\experiments.json
+>>> device: cpu
+>>> seed: 1
+>>> bert_model: bert-base-uncased
+>>> data_dir: atepc_datasets/restaurant
+***** Running training *****
+  Num examples = 3308
+  Batch size = 5
+  Num steps = 661
+################################################################################
+Train 1 Epoch1
+################################################################################
+********************************************************************************
+Train 1 Epoch1, Evaluate for atepc_datasets/restaurant
+APC_test_acc: 47.64(max: 47.64)  APC_test_f1: 22.39(max: 22.39)
+********************************************************************************
